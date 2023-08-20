@@ -1,0 +1,426 @@
+    1  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.12.0
+    2  sudo apt install git
+    3  clear
+    4  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.12.0
+    5  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+    6  sudo nano ~/.bashrc
+    7  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+    8  asdf install ruby 3.0.2
+    9  sudo apt update
+   10  apt show openssl
+   11  sudo apt install openssl -y
+   12  openssl version
+   13  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+   14  asdf install ruby 3.0.2
+   15  rails new rails-blog-demo
+   16  asdf install ruby 3.0.2
+   17  rails -v
+   18  gem install rubocop
+   19  ruby -v
+   20  clear
+   21  rails new rails-blog-demo
+   22  rails g controller pages home about
+   23  cd rails-blog-demo/
+   24  rails g controller pages home about
+   25  rails s
+   26  bundle install
+   27  rails s
+   28  clear
+   29  git init
+   30  git checkout -b master
+   31  git branch -D main
+   32  git branch -d main
+   33  ssh-keygen -t ed25519 -C "giljr.2009@gmail.com"
+   34  eval "$(ssh-agent -s)"
+   35  ssh-add ~/.ssh/id_ed25519
+   36  cat ~/.ssh/id_ed25519.pub
+   37  git remote add origin git@github.com:giljr/rails_blog_demo.git
+   38  heroku create
+   39  heroku rename j3_rails_blog_demo
+   40  git remote -v
+   41  heroku rename j3-rails-blog-demo
+   42  git remote -v
+   43  heroku stack:set heroku-20
+   44  git push -u origin master
+   45  git status
+   46  git add -A
+   47  git commit -m ":tada: Initial Commit"
+   48  git push -u origin master
+   49  git push
+   50  git push -u origin master
+   51  git push --set-upstream origin master
+   52  git push
+   53  git push --set-upstream origin master
+   54  git push --set-upstream --force origin master
+   55  git checkout master
+   56  git fetch origin
+   57  git push -u origin master
+   58  git push --set-upstream --force origin master
+   59  git config --global user.name "giljr.2009@gamil.com"
+   60  git config --global user.email "giljr.2009@gmail.com"
+   61  git config --global user.name "jaythree"
+   62  git push --set-upstream --force origin master
+   63  git push -u origin master
+   64  git pull --rebase
+   65  git push
+   66  git pull master master
+   67  git branch -M master
+   68  git push -u origin master 
+   69  git pull master master
+   70  git pull master origin
+   71  git pull origin  master
+   72  git push --set-upstream --force origin master
+   73  git push
+   74  git remote -v
+   75  git remote add origin git@github.com:giljr/rails_blog_demo.git
+   76  git remote -v
+   77  git push
+   78  git remote add origin git@github.com:giljr/rails_blog_demo.git
+   79  git push --set-upstream origin master
+   80  git push --set-upstream origin master --force
+   81  git push --set-upstream --force origin master
+   82  git 
+   83  git status
+   84  git commit -m ":tada: Initial Commit"
+   85  git push -u origin master
+   86  git push heroku master
+   87  heroku open
+   88  history
+   89  heroku open
+   90  sudo apt install postgresql postgresql-contrib libpq-dev
+   91  heroku -v
+   92  git remote -v
+   93  ls
+   94  cd Documents/
+   95  LS
+   96  ls
+   97  rails_projects/
+   98  cd rails_projects/
+   99  cd rails-blog-demo/
+  100  remote -v
+  101  git remote -v
+  102  clear
+  103  git tag -a rails_blog_v1 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Setting up dependencies on Ubuntu 23.04 (Lunar Lobster);" -m "1- Create a new project, use generate controller;" -m "2- Config routes.rb, change Gemfile;" -m "3- Running Heroku CLI and git commands;" -m "4- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  104  git push origin rails_blog_v1
+  105  clear
+  106  git checkout -b styling
+  107  rails s
+  108  cd rails-blog-demo/
+  109  rails s
+  110  gem install htmlbeautifier
+  111  rails s
+  112  cd rails-blog-demo/
+  113  rails s
+  114  de rails-blog-demo/
+  115  cd rails-blog-demo/
+  116  rails s
+  117  cler
+  118  clear
+  119  git status
+  120  git add -A
+  121  git commit -m ":lipstick: feat: Add Styling"
+  122  git push --set-ipstream origin styling
+  123  git status
+  124  git fetch
+  125  git status
+  126  history
+  127  rails s
+  128  git checkout master
+  129  git commit -m ":lipstick: feat: Insert Emoji"
+  130  git add -A
+  131  git commit -m ":lipstick: feat: Insert Emoji"
+  132  git checkout master
+  133  git pull
+  134  clear
+  135  git push heroku master
+  136  heroku open
+  137  history
+  138  git tag -a rails_blog_v2 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Creating a new feature branch: styling;" -m "1- Use Bootstrap 5 CDN & Navbar;" -m "2- Modify Home & About pages;" -m "3- Making adjustments on layout app - wrap around yield;" -m "4- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  139  git push origin rails_blog_v2
+  140  cd rails-blog-demo/
+  141  git checkout -b add_blog_posts
+  142  rails g scaffold post title:string body:text
+  143  rails db:migrate
+  144  clear
+  145  rails c
+  146  rails s
+  147  rails db:drop
+  148  rails db:migrate
+  149  rails db:seed
+  150  rails s
+  151  rails db:drop
+  152  rails db:migrate
+  153  rails db:seed
+  154  rails s
+  155  clear
+  156  git status
+  157  git add -A
+  158  git commit -m ":lipstick: feat: Add Blog Posts"
+  159  git push --set-upstream origin add_blog_posts
+  160  git status
+  161  git fetch
+  162  git status
+  163  git pull
+  164  git push heroku master
+  165  git branch checkout master
+  166  git branch -v
+  167  git checkout master
+  168  git pull
+  169  git push heroku master
+  170  heroku run rails db:migrate
+  171  heroku run rails db:seed
+  172  heroku open
+  173  history
+  174  git tag -a rails_blog_v3 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Creating a new feature branch: styling;" -m "1- Use Bootstrap 5 CDN & Navbar;" -m "2- Learn how to use console;" -m "3- Learn about db:seed;" -m "4- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  175  git push origin rails_blog_v3
+  176  git push --delete origin rails_blog_v3
+  177  git tag -a rails_blog_v3 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Scaffolding to create Posts;" -m "1- Use Bootstrap 5 CDN & Navbar;" -m "2- Modify Home & About pages;" -m "3- Making adjustments on layout app - yield wrap around ;" -m "4- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  178  git push origin rails_blog_v3
+  179  git push --delete origin rails_blog_v3
+  180  git tag -a rails_blog_v3 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Creating a new feature branch: add_blog_posts;"  -m "1- Scaffolding to create Posts;" -m "2- Use Bootstrap 5 CDN & Navbar;" -m "3- Modify Home & About pages;" -m "4- Making adjustments on layout app - yield wrap around ;" -m "5- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  181  git push --delete origin rails_blog_v3
+  182  cd rails-blog-demo/
+  183  git tag -a rails_blog_v3 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Creating a new feature branch: add_blog_posts;" -m "1- Scaffolding to create Posts;" -m "2- Use Bootstrap 5 CDN & Navbar;" -m "3- Modify Home & About pages;" -m "4- Making adjustments on layout app - yield wrap around ;" -m "5- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  184  git tag -l | xargs git tag -d
+  185  git tag -a rails_blog_v3 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Creating a new feature branch: add_blog_posts;" -m "1- Scaffolding to create Posts;" -m "2- Use Bootstrap 5 CDN & Navbar;" -m "3- Modify Home & About pages;" -m "4- Making adjustments on layout app - yield wrap around ;" -m "5- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  186  git push origin rails_blog_v3
+  187  ifconfig
+  188  sudo apt install net-tools
+  189  clear
+  190  ifconfig
+  191  clear.
+  192  clear
+  193  rails s
+  194  clear
+  195  rails g migration add_viewa_to_posts views:integer
+  196  rails db:migrate
+  197  rails s
+  198  history
+  199  rails s
+  200  git push
+  201  git add -A
+  202  git commit -m ":sparkles: feat: add views to posts"
+  203  git push
+  204  git push heroku master
+  205  heroku open
+  206  heroku db:migrate
+  207  heroku run rails db:migrate
+  208  heroku open
+  209  history
+  210  git tag -a rails_blog_v4 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Set JavaScript to bootstrap head;" -m "1- make a custom migration;" -m "2- Metrics: learn the basics of counting post and page views;" -m "3- Modify routes, dropdowns, and the like." -m "4- Making adjustments to post controller show method ;" -m "5- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😍️" 
+  211  git push origin rails_blog_v4
+  212  clear
+  213  git checkout -b add_devise
+  214  bundle install
+  215  rails g devise:install
+  216  rails g devise User
+  217  rails db:migrate
+  218  rails s
+  219  rails g migration add_user_to_posts user:belongs_to
+  220  rails db:migrate
+  221  rails c
+  222  rails db:migrate
+  223  rails s
+  224  rails db:seed
+  225  rails s
+  226  rails c
+  227  rails s
+  228  rails g migration add_name_to_user name:string
+  229  rails db:migrate
+  230  rails s
+  231  rails g devise:views
+  232  rails s
+  233  rails g devise:controllers users
+  234  rails s
+  235  rails c
+  236  rails s
+  237  rails c
+  238  rails s
+  239  clear
+  240  rails g controller users profile
+  241  rails g migration add_views_to_user views:integer
+  242  rails db:migrate
+  243  rails g migration change_views_for_users
+  244  rails s
+  245  rails c
+  246  rails s
+  247  git status
+  248  git add -A
+  249  git commit -m ":lipstick: feat: Add Devise"
+  250  git push --set-upstream origin add_devise
+  251  git checkout master
+  252  git status
+  253  git fetch
+  254  git pull
+  255  git status
+  256  git push heroku master
+  257  heroku run rails db:drop
+  258  heroku run rails db:migrate
+  259  heroku addons:destroy
+  260  heroku run rails db:migrate
+  261  heroku opn
+  262  heroku open
+  263  clear
+  264  history
+  265  git tag -a rails_blog_v5 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Add Devise to the Gemfile & Run bundle install;" -m "1- Generate the Devise configuration files;" -m "2- Generate a Devise model;" -m "3- Run the database migration;" -m "4- Customize the Devise views;" -m "5- Mount Devise routes;" -m "5- Restart your Rails server;" -m "5- Upload Rails 7 project to heroku." -m "Thank you for downloading this project 😘️👌️👋️😍️" 
+  266  git push origin rails_blog_v5
+  267  lear
+  268  clear
+  269  git checkout add_post_comments
+  270  git checkout -b add_post_comments
+  271  clear
+  272  rails g model comment post:belong_to user:belongs_to
+  273  rails g model comment post:belongs_to user:belongs_to
+  274  rails db:migrate
+  275  rails action_text:install
+  276  rails db:migrate
+  277  bundle install --gemfile /home/j3/Documents/rails_projects/rails-blog-demo/Gemfile
+  278  rails db:migrate
+  279  rails s
+  280  rails g controller comments
+  281  rails s
+  282  rails c
+  283  rails db:reset
+  284  rails s
+  285  clear
+  286  rails db:drop
+  287  rails db:migrate
+  288  rails db:seed
+  289  rails s
+  290  rails db:migrate
+  291  rails s
+  292  rails db:drop
+  293  rails db:migrate
+  294  rails s
+  295  rails db:migrate
+  296  rails s
+  297  clear
+  298  rails db:drop
+  299  rails db:migrate
+  300  rails s
+  301  bundle install
+  302  rails s
+  303  clear
+  304  history
+  305  rails s
+  306  rails db:seed
+  307  rails s
+  308  rails db:drop
+  309  rails db:migrate
+  310  rails db:seed
+  311  rails s
+  312  rails db:drop
+  313  rails db:migrate
+  314  rails db:seed
+  315  rails s
+  316  rails db:drop
+  317  rails db:migrate
+  318  rails db:seed
+  319  rails s
+  320  history
+  321  clear\
+  322  clear
+  323  git status
+  324  git add -A
+  325  git commit -m ":lipstick: feat: Add Post Comments"
+  326  git push --set-upstream origin add_post_comments
+  327  git checkout master
+  328  git status
+  329  git fetch
+  330  git pull
+  331  git status
+  332  git push heroku master
+  333  heroku run rails db:migrate
+  334  heroku run bundle install
+  335  heroku run rails db:migrate
+  336  heroku run rails db:seed
+  337  heroku open
+  338  clear
+  339  git tag -a rails_blog_v6 -m "Blog in Rails 7 - v1.0:  Go to  https://j3-rails-blog-demo-5a0a55d44e12.herokuapp.com/" -m "0- Add Comments to Each Post;" -m "1- Set up Action Text, which is a framework in Ruby on Rails for handling rich text content;" -m "2- Upload Rails 7 project to Heroku." -m "Thank you for downloading this project 😘️👌️👋️😍️" 
+  340  git push origin rails_blog_v6
+  341  rails s
+  342  sudo obs
+  343  sudo apt update
+  344  sudo apt install obs-studio
+  345  sudo apt update && sudo apt install snapd -y
+  346  sudo snap install core
+  347  sudo systemctl restart snapd
+  348  sudo apt update && sudo apt install flatpak
+  349  sudo apt install gnome-software-plugin-flatpak
+  350  flatpak remote-add --if-not-exists flathub
+  351  https://flathub.org/repo/flathub.flatpakrepo
+  352  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  353  udo add-apt-repository ppa:obsproject/obs-studio
+  354  sudo add-apt-repository ppa:obsproject/obs-studio
+  355  bundle install
+  356  celar
+  357  clear
+  358  rails s
+  359  clear
+  360  rails -v
+  361  ls
+  362  cd Desktop/
+  363  ls
+  364  mkdir RAILS_PROJECTS
+  365  CD RAILS_PROJECTS/
+  366  cd RAILS_PROJECTS/
+  367  lsls
+  368  ls
+  369  cd ..
+  370  ls
+  371  clear
+  372  rails -v
+  373  ls
+  374  cd RAILS_PROJECTS/
+  375  clear
+  376  rails new rails-blog-demo
+  377  clear
+  378  cd rails-blog-demo/
+  379  ls
+  380  clear
+  381  rails g controller pages home about
+  382  code .
+  383  clear
+  384  sudo apt install postgresql postgresql-contrib libpq-dev
+  385  clear
+  386  cd ..
+  387  cd ~
+  388  ls
+  389  cd Desktop/
+  390  claet
+  391  clear
+  392  rails -v
+  393  clear
+  394  rails new rails-blog-demo
+  395  clear
+  396  cd RAILS_PROJECTS/
+  397  cd rails
+  398  ls
+  399  cd ..
+  400  ls
+  401  rm -rf RAILS_PROJECTS/
+  402  ls
+  403  rm -rf rails-blog-demo/
+  404  ls
+  405  clear
+  406  cat ~/.ssh/id_ed25519.pub
+  407  heroku -v
+  408  rails c
+  409  rails s
+  410  clear
+  411  git checkout -b add_turbo 
+  412  rails c
+  413  rails s
+  414  rails app:update
+  415  rails s
+  416  rails kill 38313
+  417  rails s
+  418  clear
+  419  bundle exec rails active_storage:install
+  420  bundle exec rails db:migrate
+  421  rails db:migrate
+  422  rails s
+  423  sudo apt-get install -y libvips
+  424  rails s
+  425  hystory >> history.txt
+  426  history >> history.txt
