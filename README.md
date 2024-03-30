@@ -119,12 +119,12 @@ How To Create A Blog in VS Code** — [Part IX](https://medium.com/jungletronics
 
 ## Authors
 
-[@giljr](https://www.linkedin.com/in/giljrx/)
+ - [@giljr](https://www.linkedin.com/in/giljrx/)
 ## Contributing
 
-[@jeovan.farias](https://www.linkedin.com/in/jeovan-f-6283b8145/)
+ - [@jeovan.farias](https://www.linkedin.com/in/jeovan-f-6283b8145/)
 
-[@bruno.vichinheski](https://www.linkedin.com/in/brunovichinheski/)
+ - [@bruno.vichinheski](https://www.linkedin.com/in/brunovichinheski/)
  
 
 
