@@ -59,13 +59,12 @@ Here are some key points about the graphics I'd like to discuss:
 Users have many posts, and each post belongs to one user.
 Posts have many comments, and each comment belongs to one post.
 Users also have many comments, and each comment belongs to one user.
-Noticed System Tables:
 
 2. The Noticed system:
 
-comprises two tables:noticed_notifications table: Which tracks recipients and whether they've seen or read notifications.
+comprises two tables: noticed_notifications table: Which tracks recipients and whether they've seen or read notifications.
 noticed_events table: Stores events and comments about what happened, including the type of comments (e.g., bug notes, release notes, improvements notes).
-The polymorphic attribute is set to true, allowing a model to belong to multiple parent models. For instance, the Notification model can be associated with various entities like User, Post, or Comment dynamically.
+The polymorphic attribute is set to true, allowing a model to belong to multiple parent models. For instance, the Notification model can be associated with various entities like User, Post, Admin or Comment dynamically.
 
 3. Relationships and Glue Logic:
 
@@ -74,12 +73,12 @@ In the noticed_events table, events belong to records, and in noticed_notificati
 4. Notification Handling:
 
 There are two types of notifications: one directly associated with users and another through delegations to posts.
-The Comments table has noticed_mentions, connecting to the Noticed library through has_noticed notifications linked with the Noticed::Event model. Posts also have notification mentions, linked through user delegation.
+The Comments table has many 'notification_mentions', connecting to the Noticed library through 'has_noticed_notifications' linked with the Noticed::Event model. The Posts table also has many 'notification_mentions', linked through user delegation.
 
 5. MVC Architecture:
 
-The controller, represented by application_controller.rb, always sets notifications if the user is authenticated via Devise.
-The view, represented by _notifications.html.erb, presents the UI interface (a simple Bootstrap bell badge) and renders the system encapsulating the business logic.
+The controller, represented by 'application_controller.rb', always sets notifications if the user is authenticated via 'Devise'.
+The view, represented by '_notifications.html.erb' file, presents the UI interface (a simple Bootstrap bell badge) and renders the system encapsulating the business logic.
 
 6. Olive's Framework:
 
