@@ -44,7 +44,7 @@ Learning By Doing!
 You won't find a graphic like this anywhere on the internet
 ```
 
-![Noticed v2]([https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IsMgn8D6IjOZGqXRpKUdNA.png](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NaultE0FbjmWqCRhIOEo6w.png)
+![Noticed v2](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IsMgn8D6IjOZGqXRpKUdNA.png)(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NaultE0FbjmWqCRhIOEo6w.png)
 
 Download the [PNG](https://drive.google.com/file/d/1Wt21u-Kelk3PCVeSF9ckGIwkr2J5EL67/view)
 or [SVG](https://drive.google.com/file/d/1x8QgbI96EoeD-NxaGoE1fr-iZR5v1BHm/view?usp=drive_link) Images from my drive.
