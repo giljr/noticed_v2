@@ -76,3 +76,5 @@ group :test do
 end
 
 gem "noticed", "= 2.2"
+gem 'activeadmin', '~> 3.2.0'
+gem 'sassc'

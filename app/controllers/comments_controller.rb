@@ -3,14 +3,17 @@ class CommentsController < ApplicationController
   before_action :set_post
 
   def create
-    # @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
+    @comment = @post.comments.new(comment_params)
     @comment.user = current_user
-    if @comment.save
-      flash[:notice] = 'Comments has been created'
+
+    if curse_word_found?(@comment.body.to_plain_text)
+      flash[:alert] = 'Your comment contains inappropriate language and cannot be saved.'
+      redirect_to post_path(@post)
+    elsif @comment.save
+      flash[:notice] = 'Comment has been created.'
       redirect_to post_path(@post)
     else
-      flash[:alert] = 'Comments has not been created'
+      flash[:alert] = 'Comment could not be created.'
       redirect_to post_path(@post)
     end
   end
@@ -31,6 +34,17 @@ class CommentsController < ApplicationController
         format.html { redirect_to post_url(@post), alert: 'Comment was not updated!' }
       end
     end
+  end
+
+  def no_curse_words
+    plain_text_body = body.to_plain_text if body.present?
+    return unless plain_text_body.present? && curse_word_found?(plain_text_body)
+
+    errors.add(:base, 'Your comment contains inappropriate language and cannot be saved.')
+  end
+
+  def curse_word_found?(text)
+    CURSE_WORDS.any? { |word| text.match?(Regexp.new(word, Regexp::IGNORECASE)) }
   end
 
   private

@@ -6,6 +6,15 @@ class Comment < ApplicationRecord
   before_destroy :cleanup_notifications
   has_noticed_notifications model_name: 'Noticed::Event'
   has_many :notification_mentions, as: :record, dependent: :destroy, class_name: 'Noticed::Event'
+  validate :no_curse_words
+
+  def self.ransackable_attributes(_auth_object = nil)
+    %w[user_id post_id] # Allow searching by user_id, title and body
+  end
+
+  def self.ransackable_associations(_auth_object = nil)
+    [] # We don't have any searchable associations in this case
+  end
 
   private
 
@@ -23,5 +32,16 @@ class Comment < ApplicationRecord
     # post.notifications.count -> [3]
     # post.notifications.where(recipient_id: 1) - > #<ActiveRecord::AssociationRelation []>
     # same as in console: Notification.where(comment_id: :comment_id)
+  end
+
+  def no_curse_words
+    plain_text_body = body.to_plain_text if body.present?
+    return unless plain_text_body.present? && curse_word_found?(plain_text_body)
+
+    errors.add(:base, 'Your comment contains inappropriate language and cannot be saved.')
+  end
+
+  def curse_word_found?(text)
+    CURSE_WORDS.any? { |word| text.match?(Regexp.new(word, Regexp::IGNORECASE)) }
   end
 end

@@ -4,7 +4,8 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all.order(created_at: :desc)
+    # @posts = Post.all.order(created_at: :desc)
+    @posts = Post.where.not(published_at: nil).order(published_at: :desc)
   end
 
   # GET /posts/1 or /posts/1.json
@@ -35,7 +36,14 @@ class PostsController < ApplicationController
         format.html { redirect_to post_url(@post), notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
-        format.html { render :new, status: :unprocessable_entity }
+        error_message = @post.errors.full_messages.join('. ')
+        if @post.errors.any? { |error| error.attribute == 'title' }
+          error_message += '. Title contains inappropriate language'
+        end
+        if @post.errors.any? { |error| error.attribute == 'body' }
+          error_message += '. Body contains inappropriate language'
+        end
+        format.html { redirect_to new_post_url, alert: error_message }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end

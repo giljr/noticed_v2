@@ -1,13 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+user1 = User.create(email: 'test1@test.com', name: 'test1', password: 'password', password_confirmation: 'password')
+user2 = User.create(email: 'test2@test.com', name: 'test2', password: 'password', password_confirmation: 'password')
 
-User.create(email: 'test1@test.com', name: 'test1', password: 'password', password_confirmation: 'password')
-User.create(email: 'test2@test.com', name: 'test2', password: 'password', password_confirmation: 'password')
 3.times do |i|
-  Post.create(title: "Title #{i}", body: "Body #{i} words goes here idk...", user_id: User.first.id)
+  post1 = Post.create(title: "Title #{i}", body: "Body #{i} words goes here idk...", user_id: user1.id)
+  post2 = Post.create(title: "Title #{i}", body: "Body #{i} words goes here idk...", user_id: user2.id)
+
+  3.times do |_j|
+    Comment.create(post_id: post1.id, user_id: user2.id, body: "Comment body for Post #{post1.id} by User #{user2.id}")
+    Comment.create(post_id: post2.id, user_id: user1.id, body: "Comment body for Post #{post2.id} by User #{user1.id}")
+  end
+end
+
+if Rails.env.development?
+  AdminUser.create!(email: 'admin@example.com', password: 'password',
+                    password_confirmation: 'password')
 end
